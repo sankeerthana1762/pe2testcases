@@ -20,9 +20,9 @@ public class StudentsTest {
     }
 
     @Test     // checking average values
-    public void average() {
-        int inputArray[]={25,25,25,25};
-        assertEquals(25,students.average(inputArray));
+    public void averageOfMarks() {
+        int inputArray[]={80,90,80,90};
+        assertEquals(85,students.average(inputArray));
         assertNotEquals(100,students.average(inputArray));
     }
     @Test
@@ -30,4 +30,26 @@ public class StudentsTest {
         int inputArray[]={25,25,101,25};
         assertNotNull("Null is not Expected!",students.average(inputArray));
     }
+    @Test
+    public void MinimumOfMarks() { //checking the minimum marks
+        int inputArray[]={54,32,78,92};
+        assertNotNull("Null is not Expected!",students.minimumOfMarks(inputArray));
+    }
+    @Test
+    public void givenArrayShouldReturnMinimumMarks() { //checking the minimum marks
+        int inputArray[]={54,32,78,92};
+        assertEquals(32,students.minimumOfMarks(inputArray));
+    }
+
+    @Test
+    public void MaximumOfMarks() { //checking the maximum marks
+        int inputArray[]={54,32,78,92};
+        assertNotNull("Null is not Expected!",students.maximumOfMarks(inputArray));
+    }
+    @Test
+    public void givenArrayShouldReturnMaximumMarks() { //checking the maximum marks
+        int inputArray[]={54,32,78,92};
+        assertEquals(92,students.maximumOfMarks(inputArray));
+    }
+
 }

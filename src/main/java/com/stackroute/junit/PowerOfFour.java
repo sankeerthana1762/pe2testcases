@@ -1,5 +1,7 @@
 package com.stackroute.junit;
 
+//checking whether the given input is divided by four or not
+
 public class PowerOfFour {
     public String powerOfFour(int n) {
 

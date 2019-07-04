@@ -1,5 +1,6 @@
 package com.stackroute.junit;
 
+//display the average ,minimum and maximum marks
 public class Students {
     public int average(int arr[])
 {
@@ -10,7 +11,7 @@ public class Students {
     return sum/arr.length;
 
 }
-    public int lowest(int arr[])
+    public int minimumOfMarks(int arr[])
     {
         int minimum=arr[0] ;
         for(int element:arr){
@@ -20,7 +21,7 @@ public class Students {
         return minimum;
 
     }
-    public int highest(int arr[])
+    public int maximumOfMarks(int arr[])
     {
 
         int maximum=arr[0] ;

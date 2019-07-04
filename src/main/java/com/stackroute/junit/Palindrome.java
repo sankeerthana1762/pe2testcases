@@ -1,22 +1,19 @@
-package com.stackroute.code;
+package com.stackroute.junit;
 
+//checking whether the input string is palindrome or not
 public class Palindrome {
-    public String validatePalindromeandReverse(String input)
+    public String palindromeandReverse(String input)
     {
         String reversed="";
-        String temp=input;
-//        while(num != 0) {
-//            int digit = num % 10;
-//            reversed = reversed * 10 + digit;
-//            num /= 10;
-//        }
+
+
 
         for(int i = input.length() - 1; i >= 0; i--)
         {
             reversed = reversed + input.charAt(i);
         }
 
-        if(temp==input)
+        if(reversed==input)
         {
             return "Entered input is a palindrome";
         }
